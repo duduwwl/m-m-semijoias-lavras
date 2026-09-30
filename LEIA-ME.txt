@@ -1,0 +1,14 @@
+M&M Semijoias Lavras — site demonstrativo
+
+Abra index.html em um navegador ou sirva esta pasta com um servidor estático.
+Páginas: início, produtos, checkout e painel administrativo (admin.html).
+
+O catálogo inicial tem 20 produtos ilustrativos e usa as fotos fornecidas.
+Preços, nomes de produtos, estoque e pedidos são demonstrativos. O checkout
+simula Pix, crédito e débito, sem gerar cobrança ou processar cartão.
+
+Produtos, sacola e pedidos ficam no armazenamento local de cada navegador.
+Para operar uma loja real e compartilhar pedidos entre clientes, é preciso
+implantar servidor, banco de dados, autenticação de administradores e um
+provedor de pagamento. Confirme preços, disponibilidade e descrição das peças
+com a M&M antes de publicar uma loja transacional.
