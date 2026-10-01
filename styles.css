@@ -27,3 +27,5 @@
 
 
 
+
+@media(max-width:480px){.admin-panel-head{align-items:stretch;flex-direction:column;gap:10px}.admin-panel-head select{width:100%;min-width:0;max-width:100%}}
