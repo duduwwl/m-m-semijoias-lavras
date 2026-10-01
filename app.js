@@ -6,7 +6,7 @@
   const categories = ['Todos', 'Colares', 'Brincos', 'Anéis', 'Pulseiras', 'Conjuntos'];
   const seed = [
     ['Colar Duplo Ônix','Colares',189,8,'assets/foto-13.webp','Mais amados','Duas camadas e pedras escuras para um visual marcante.'],
-    ['Anel Medalha Dourada','Anéis',139,7,'assets/foto-05.webp','Destaque','Um toque de significado para todos os dias.'],
+    ['Anel Medalha Dourada','Anéis',139,7,'assets/foto-06.webp','Destaque','Um toque de significado para todos os dias.'],
     ['Argola Cravejada Luz','Brincos',159,10,'assets/foto-11.webp','Mais amados','Brilho delicado em uma argola versátil.'],
     ['Pulseira Medalhas','Pulseiras',129,11,'assets/foto-10.webp','','Pequenos pingentes que dançam com o movimento.'],
     ['Conjunto Aurora','Conjuntos',249,6,'assets/foto-09.webp','Presenteável','Colar, brincos e pulseira em harmonia.'],
@@ -14,7 +14,7 @@
     ['Anel Gota Radiante','Anéis',169,5,'assets/foto-06.webp','','Pedra em formato de gota e acabamento luminoso.'],
     ['Colar Jardim de Cores','Colares',229,6,'assets/foto-07.webp','Novo','Pontos de cor para iluminar o look.'],
     ['Anel Jardim Dourado','Anéis',149,7,'assets/foto-08.webp','','Geometria delicada com personalidade.'],
-    ['Brinco Noite Elegante','Brincos',119,8,'assets/foto-14.webp','','Pedra escura e brilho sutil para ocasiões especiais.'],
+    ['Brinco Noite Elegante','Brincos',119,8,'assets/brinco-noite-produto.webp','','Pedra escura e brilho sutil para ocasiões especiais.'],
     ['Colar Borboletas','Colares',209,5,'assets/foto-08.webp','Edição especial','Borboletas delicadas em um design leve.'],
     ['Conjunto Safira','Conjuntos',279,4,'assets/foto-04.webp','Destaque','Azul intenso em peças para impressionar.'],
     ['Pulseira Ponto de Luz','Pulseiras',99,14,'assets/foto-10.webp','','Um brilho discreto para o dia a dia.'],
@@ -23,7 +23,7 @@
     ['Anel Trio Brilho','Anéis',159,6,'assets/foto-05.webp','','Três formas de trazer luz às mãos.'],
     ['Brinco Gota Clara','Brincos',139,8,'assets/foto-09.webp','','Movimento suave e elegância atemporal.'],
     ['Pulseira Colorida','Pulseiras',139,5,'assets/foto-07.webp','','Pequenas pedras coloridas em uma composição alegre.'],
-    ['Colar Ponto de Luz','Colares',119,12,'assets/foto-12.webp','Essencial','Uma escolha delicada para usar sempre.'],
+    ['Colar Ponto de Luz','Colares',119,12,'assets/foto-04.webp','Essencial','Uma escolha delicada para usar sempre.'],
     ['Conjunto Noite','Conjuntos',239,4,'assets/foto-13.webp','','Duas peças de personalidade para momentos especiais.']
   ].map((p,i) => ({id:`mm-${i+1}`,title:p[0],category:p[1],price:p[2],stock:p[3],image:p[4],badge:p[5],description:p[6]}));
 
@@ -41,7 +41,7 @@
 
   function shell(){
     const page=document.body.dataset.page;
-    $('#site-header').innerHTML=`<div class="announcement">DUAS LOJAS EM LAVRAS · ESCOLHA SEU PRÓXIMO BRILHO</div><header class="site-header"><div class="header-inner"><button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button><nav class="main-nav" aria-label="Navegação principal"><a class="${page==='home'?'active':''}" href="index.html">Início</a><a class="${page==='products'?'active':''}" href="produtos.html">Coleção</a><a href="index.html#lojas">Nossas lojas</a></nav><a class="logo" href="index.html" aria-label="M&M Semijoias, início">M<span>&</span>M<small>Semijoias Lavras</small></a><div class="header-actions"><a href="https://www.instagram.com/mmlavras/" target="_blank" rel="noopener">Instagram ↗</a><button class="cart-trigger" aria-label="Abrir sacola"><span class="cart-icon">♧</span><span>Sacola</span><span class="cart-count">0</span></button></div></div></header>`;
+    $('#site-header').innerHTML=`<header class="site-header"><div class="header-inner"><button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button><nav class="main-nav" aria-label="Navegação principal"><a class="${page==='home'?'active':''}" href="index.html">Início</a><a class="${page==='products'?'active':''}" href="produtos.html">Coleção</a><a href="index.html#lojas">Nossas lojas</a></nav><a class="logo" href="index.html" aria-label="M&M Semijoias, início">M<span>&</span>M<small>Semijoias Lavras</small></a><div class="header-actions"><a class="whatsapp-link" href="https://wa.me/5535998845983" target="_blank" rel="noopener" aria-label="Fale com a M&M pelo WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6A11.8 11.8 0 0 0 20.5 3.5ZM12 21a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.6 1 .9-3.5-.2-.4A9.7 9.7 0 1 1 12 21Zm5.3-7.3c-.3-.2-1.7-.8-2-.9s-.5-.2-.7.2-.8.9-1 1.1-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.7l.5-.5.2-.5c.1-.2 0-.4 0-.5l-.9-2.1c-.2-.5-.5-.4-.7-.4h-.6a1.2 1.2 0 0 0-.9.4 3.8 3.8 0 0 0-1.2 2.8 6.6 6.6 0 0 0 1.4 3.4 15 15 0 0 0 5.8 5.1c.8.4 1.5.6 2 .7.8.3 1.5.2 2 .1.6-.1 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4Z"/></svg></a><a href="https://www.instagram.com/mmlavras/" target="_blank" rel="noopener">Instagram</a><button class="cart-trigger" aria-label="Abrir sacola"><svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span>Sacola</span><span class="cart-count">0</span></button></div></div></header>`;
     $('#site-footer').innerHTML=`<footer class="site-footer"><div class="section-wrap footer-main"><div class="footer-brand"><a class="logo" href="index.html">M<span>&</span>M<small>Semijoias Lavras</small></a><p>Peças para celebrar quem você é e todos os momentos que ainda estão por vir.</p></div><div class="footer-col"><h3>Explore</h3><a href="index.html">Início</a><a href="produtos.html">Todos os produtos</a><a href="checkout.html">Minha sacola</a><a href="admin.html">Painel demonstrativo</a></div><div class="footer-col"><h3>Visite a M&M</h3><p>Rua Francisco Sales, 331<br>Centro · Lavras, MG</p><p>Av. 18 de Maio, 69<br>Shopping Cidade da Serra</p></div><div class="footer-col"><h3>Vamos conversar</h3><a href="https://wa.me/5535998845983" target="_blank" rel="noopener">WhatsApp · (35) 99884-5983 ↗</a><a href="https://www.instagram.com/mmlavras/" target="_blank" rel="noopener">@mmlavras ↗</a></div></div><div class="section-wrap footer-bottom"><span>© ${new Date().getFullYear()} M&M Semijoias Lavras · Experiência demonstrativa</span><span>Feito para celebrar o seu brilho.</span></div></footer>`;
     $('#cart-root').innerHTML=`<div class="cart-overlay" aria-hidden="true"></div><aside class="cart-drawer" role="dialog" aria-label="Sacola de compras" aria-modal="true"><div class="cart-drawer-head"><h2>Sua sacola</h2><button class="close-cart" aria-label="Fechar sacola">×</button></div><div class="cart-drawer-body"></div><div class="cart-drawer-foot"></div></aside>`;
     $('.menu-toggle').addEventListener('click',e=>{const nav=$('.main-nav');const open=nav.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',String(open));});
@@ -96,5 +96,6 @@
   if(page==='admin')initAdmin();
   initWebMCP();
 })();
+
 
 
